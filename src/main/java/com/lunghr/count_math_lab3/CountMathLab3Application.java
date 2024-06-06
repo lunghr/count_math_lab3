@@ -6,8 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class CountMathLab3Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CountMathLab3Application.class, args);
-	}
+    public static void main(String[] args) {
+        Console console = new Console();
+        AppManager app = new AppManager(console);
+        app.run();
+    }
 
 }
